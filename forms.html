@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="" method="post">
+        <p>
+            <label for="first">First Name</label>
+            <input type="text" name="first" id="first">
+        </p>
+        <p>
+            <label for="last">Last Name</label>
+            <input type="text" name="last" id="last">
+        </p>
+        <p>
+            <label for="pic">Upload picture</label>
+            <input type="file" name="pic" id="pic">
+        </p>
+        <p>
+            <textarea name="summary" rows="4" cols="50">To summarize...</textarea>
+        </p>
+        <p>
+            <label for="item1">Item 1:</label>
+            <input type="checkbox" name="item1" id="item1">
+        </p>
+        <p>
+            <label for="item1">Item 2:</label>
+            <input type="checkbox" name="item2" id="item2">
+        </p>
+        <p>
+            <label for="item1">Item 3:</label>
+            <input type="checkbox" name="item3" id="item3">
+        </p>
+        <div>
+            <input type="radio" name="restaurants" value="Subway" id="sub">  
+            <label for="sub">Staway</label>  
+        </div>
+        <div>
+            <input type="radio" name="restaurants" value="Starbucks" id="starB">  
+            <label for="starB">Starbucks</label>  
+        </div>
+        <div>
+            <input type="radio" name="restaurants" value="Pizza Hut" id="pizzH">  
+            <label for="pizzH">Pizza Hut</label>  
+        </div>
+        <p>Select a flavor:</p>
+   <div>                                
+      <input type="radio" name="flavor" value="1" checked>
+      <label for="choc">Chocolate</label>
+   </div>
+   <div>
+      <input type="radio" name="flavor" value="2">
+      <label for="van">Vanilla</label>
+   </div>
+   <div>                                
+      <input type="radio" name="flavor" value="3">
+      <label for="straw">Strawberry</label>
+   </div>
+
+   <p>Select toppings:</p>
+   <div>                                
+      <input type="checkbox" name="topping-whip">
+      <label for="whip">Whipped Cream</label>
+   </div>
+   <div>
+      <input type="checkbox" name="topping-nuts" checked>
+      <label for="nuts">Nuts</label>
+   </div>
+
+   <p>Drop-down menu</p>
+   <select name="sport">
+        <option value="football">Football</option>
+        <option value="baseball">Baseball</option>
+        <option value="basketball">Basketball</option>
+        <option value="hockey">Hockey</option>
+        <option value="soccer">Soccer</option>
+    </select>
+    <p>List box</p>
+    <select name="flagcolors" size="4" multiple>
+        <option value="red">Red</option>
+        <option value="orange">Orange</option>
+        <option value="yellow">Yellow</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="purple">Purple</option>
+        <option value="white">White</option>
+        <option value="black">Black</option>
+    </select>
+    <p>button</p>
+        <input type="button" value="Home"> 
+        <button type="button">
+            <img src="home.png" alt="home"><br>
+            <strong>Home</strong>
+        </button>
+    <p>
+        <label for="password">password</label>
+        <input type="password" name="secret" size="10" maxlength="10" minlength="4" id="password">
+    </p>
+    <p>Fieldset</p>
+        <fieldset>
+            <legend>Favorite Sitcom</legend>
+
+            <input type="radio" name="sitcom" value="The Office" id="theOffice">
+            <label for="theOffice">The Office</label>
+
+            <input type="radio" name="sitcom" value="Community" id="community">
+            <label for="community">Community</label>
+  
+            <input type="radio" name="sitcom" value="The Big Bang Theory" id="bigBang">
+            <label for="bigBang">The Big Bang Theory</label>
+  
+            <input type="radio" name="sitcom" value="Other" id="other">
+            <label for="other">Other</label>
+        </fieldset>
+        
+    <p>Picker(date, number, color, range)</p>
+    <p>
+        <input type="date" name="date">
+    </p>
+    <p>
+        <input type="color" name="color">
+    </p>
+    <p>
+        <input type="number" name="number">
+    </p>
+    <p>
+        <input type="range">
+    </p>
+    <p>A combo box</p>
+    <input list="sport">
+
+    <datalist id="sport">
+        <option value="Baseball">
+        <option value="Basketball">
+        <option value="Football">
+        <option value="Hockey">
+        <option value="Soccer">
+    </datalist>
+   <p>
+      <input type="submit" value="Order">
+   </p>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
